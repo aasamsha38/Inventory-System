@@ -1,0 +1,280 @@
+.site {
+	&__header {
+		background: $white;
+		display: flex;
+		align-items: center;
+		// padding: 5px 30px;
+		    box-shadow: 0 0.2rem 2rem rgba(132, 139, 200, 0.1);
+
+
+		&-frame {
+			flex-basis: 0;
+			flex-grow: 1;
+			max-width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			padding: 10px 20px;
+		}
+
+		&-action {
+			ul {
+				@extend %listreset;
+				display: flex;
+				align-items: center;
+			}
+
+			li {
+				padding: 0 0 0 20px;
+
+				&:last-child {
+					@include media('>=tablet') {
+						display: none;
+					}
+				}
+			}
+
+			.badge {
+				background: $medium;
+				border: none;
+				border-radius: 50%;
+				color: $white;
+				display: block;
+				height: 32px;
+				width: 32px;
+				position: relative;
+				z-index: 0;
+
+				sup {
+					background: $error;
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 20px;
+					height: 20px;
+					font-size: 12px;
+					position: absolute;
+					top: -6px;
+					right: -6px;
+					z-index: 1;
+				}
+			}
+
+			.jsxNav {
+				background: $primary;
+				border: none;
+				border-radius: 2px;
+				margin: 0;
+				padding: 0;
+				height: 25px;
+				width: 36px;
+				position: relative;
+				z-index: 0;
+
+				&:before,
+				&:after,
+				.bar {
+					background: $white;
+					height: 2px;
+					position: absolute;
+					left: 5px;
+					right: 5px;
+					z-index: -1;
+				}
+
+				&:before {
+					content: '';
+					top: 5px;
+				}
+
+				.bar {
+					top: 50%;
+					transform: translateY(-50%);
+				}
+
+				&:after {
+					content: '';
+					bottom: 5px;
+				}
+			}
+
+			&--drop {
+				display: none;
+			}
+		}
+	}
+
+	&__logo {
+		background: $primary;
+		flex: 0 0 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 30px 0;
+
+		a {
+			@include inline-block;
+			width: 100px;
+			text-decoration: none;
+			font-weight: 800;
+			font-size: 24px;
+			color: $white;
+			.logo_bold{
+				display: flex;
+				position: fixed;
+			}
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__main {
+		display: flex;
+	}
+}
+.worksidebar {
+	background: $primary;
+	flex: 0 0 200px;
+	color: $white;
+}
+.workboard {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	padding: 20px;
+
+	.subheading {
+		font-size: 16px;
+	}
+
+	.dropdown {
+		padding: 20px 0;
+		select {
+			border: none;
+			border-bottom: 1px solid $medium;
+			padding: 5px;
+			background:transparent ;
+			font-size: 14px;
+		}
+	}
+}
+
+.site__nav {
+	padding: 30px 0;
+	position: fixed;
+	> ul {
+		@extend %listreset;
+
+		li:last-child {
+			position: absolute;
+			top: 33rem;
+			width: 100%;
+		}
+
+		// .knav.active {
+		// 	background: rgba(5, 68, 112, 0.5);
+		// 	color: $primary;
+		// 	margin-left: 0;
+		// }
+		// knav.active:before {
+		// 	content: "";
+		// 	width: 6px;
+		// 	height: 100%;
+		// 	background: $primary;
+		// }
+
+		// .knav.active span {
+		// 	color: $primary;
+		// 	margin-left: calc(1rem - 3px);
+		// }
+
+
+		> li {
+			> .knav {
+				width: 200px;
+				a {
+					color: $white;
+					display: block;
+					padding: 18px 50px 18px 30px;
+					// @include animate(background);
+
+					span {
+						font-size: 0.9rem;
+						transition: all 500ms ease;
+					}
+
+					&:hover {
+						width: 100%;
+						background:lighten($primary, 8%);
+						border-right: 3px solid $white;
+
+						span {
+							margin-left: 0.01rem;
+							font-size: 0.92rem;
+						}
+					}
+				}
+
+				button {
+					display: none;
+				}
+			}
+
+			> .kdrop {
+				display: none;
+			}
+		}
+	}
+
+	.kdrop {
+		> ul {
+			@extend %listreset;
+
+			> li {
+				> a {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+
+.pnlsearch__form {
+	border: 1px solid $gray-variant;
+	border-radius: 5px;
+	padding: 3px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 12px;
+	right: 700px;
+	left: 220px;
+
+	.form__set {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%;
+
+		input {
+			background: transparent;
+			border: none;
+			height: 25px;
+			padding: 0.2em 0.5em;
+		}
+	}
+
+	button {
+		flex: 0 0 17px;
+		background: transparent;
+		border: none;
+		margin: 0;
+		padding: 0;
+		width: 17px;
+		height: 17px;
+	}
+}

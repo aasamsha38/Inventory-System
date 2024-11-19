@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IMS-Sales Report</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header class="site__header">
+			<div class="site__logo">
+				<a href="login.html"><span class="logo_bold">IMS</span></a>
+			</div>
+			<div class="site__header-frame">
+				<div class="site__header-action">
+					<ul>
+						<li>
+							<button class="badge" type="button"><span class="icon-notification"></span><sup class="counter">99</sup></button>
+							<div class="site__header-action--drop notification__drop">
+								<ul>
+									<li><span class="txt">Stock Out Maggi</span></li>
+									<li><span class="txt"></span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button class="badge" type="button"><span class="icon-user"></span><sup class="counter">5</sup></button>
+							<div class="site__header-action--drop profile__drop">
+								<ul>
+									<li><a href="profile.html">My Profile</a></li>
+									<li><a href="login.html">Logout</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" class="jsxNav"><span class="bar"></span></button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="site__main" class="site__main report__main">
+			<aside class="worksidebar">
+				<form class="general--form pnlsearch__form">
+					<div class="form__set">
+						<input type="text">
+					</div>
+					<button type="submit"><span class="icon-search"></span></button>
+				</form>
+				<nav class="site__nav">
+					<ul>
+						<li>
+							<div class="knav">
+								<a href="adm_dashboard.html">
+									<span class="icon-dashboard"></span>
+									<span class="txt">Dashboard</span>
+								</a>
+							</div>
+						</li>
+						<li >
+							<div class="knav">
+								<a href="inventory.html">
+									<span class="icon-inventory"></span>
+									<span class="txt">Inventory</span>
+								</a>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="report.html">
+									<span class="icon-evaluation"></span>
+									<span class="txt">Sale Report</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="product.html">
+									<span class="icon-product"></span>
+									<span class="txt">Product</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+							<div class="kdrop">
+								<ul>
+									<li><a href="category.html">Category</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="orders.html">
+									<span class="icon-order"></span>
+									<span class="txt">Orders</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="manageuser.html">
+									<span class="icon-setting"></span>
+									<span class="txt">Manage User</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+							<div class="kdrop">
+								<ul>
+									<li><a href="addgroup.html">Add group</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="login.html">
+									<span class="icon-logout"></span>
+									<span class="txt">Log Out</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="workboard">
+				<div class="workboard__heading">
+					<h1 class="workboard__title">Sales</h1>
+				</div>
+				<div class="workpanel">
+					<div class="overall-info">
+						<div class="row">
+							<div class="col xs-12">
+								<div class="info">
+									<div class="row">
+										<div class="col xs-12 sx-6">
+											<span>Date Range</span>
+										</div>
+										<div class="col xs-12 sx-6">
+											<form action="get">
+												<div class="site-panel">
+													<div class="form__action">
+														<input type="submit" class="button primary-tint" value="Generate">
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<form class="general--form access__form">
+										<div class="row">
+											<div class="col xs-12 sm-3">
+												<div class="form__module">
+													<div class="form__set">
+														<input type="date" id="startdate">
+														<input type="date" id="enddate">
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col xs-12">
+							<div class="row">
+								<div class="col xs-12">
+									<div class="meta-info">
+										<div class="row">
+											<div class="col xs-12 sm-6">
+												<h2 class="subheading">Selling Products</h2>
+											</div>
+											<div class="col xs-12 sm-6">
+												<form action="get">
+													<div class="site-panel">
+														<div class="form__module">
+															<div class="form__action">
+																<span class="icon-add"></span><input type="submit" class="button primary-tint" value="Add Sales">
+															</div>
+														</div>
+														<div class="downoad">
+															<a href=""><span class="icon-download"></span>Download</a>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col xs-12">
+												<div class="questionaries__showcase" id="question_popup" style="display: flex;">
+													<div class="tbl-wrap">
+														<table id="sales__table">
+															<thead>
+																<tr>
+																	<th class="name">Product Name</th>
+																	<th class="Quantity">Quantity</th>
+																	<th class="Total">Totals</th>
+																	<th class="Date">Date</th>
+																	<th class="action">Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td data-label="Product Name">Admin</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																	<td data-label="Action"><a href="#"><span class="icon-trash"></span></a><a href="#"><span class="icon-edit"></span></a></td>
+																</tr>
+																<tr>
+																	<td data-label="Product Name">Special</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																	<td data-label="Action"><a href="#"><span class="icon-trash"></span></a><a href="#"><span class="icon-edit"></span></a></td>
+																</tr>
+																<tr>
+																	<td data-label="Product Name">User</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																	<td data-label="Action"><a href="#"><span class="icon-trash"></span></a><a href="#"><span class="icon-edit"></span></a></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col xs-12">
+							<div class="row">
+								<div class="col xs-12 sm-6">
+									<div class="meta-info">
+										<div class="row">
+											<div class="col xs-12 sm-6">
+												<h2 class="subheading">Daily Sales</h2>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col xs-12">
+												<div class="questionaries__showcase" id="question_popup" style="display: flex;">
+													<div class="tbl-wrap">
+														<table id="sales__table">
+															<thead>
+																<tr>
+																	<th class="name">Product Name</th>
+																	<th class="Quantity">Quantity</th>
+																	<th class="Total">Totals</th>
+																	<th class="Date">Date</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td data-label="Product Name">Admin</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																</tr>
+																<tr>
+																	<td data-label="Product Name">Admin</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																</tr>
+																<tr>
+																	<td data-label="Product Name">Admin</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col xs-12 sm-6">
+									<div class="meta-info">
+										<div class="row">
+											<div class="col xs-12 sm-6">
+												<h2 class="subheading">Monthly Sales</h2>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col xs-12 ">
+												<div class="questionaries__showcase" id="question_popup" style="display: flex;">
+													<div class="tbl-wrap">
+														<table id="sales__table">
+															<thead>
+																<tr>
+																	<th class="name">Product Name</th>
+																	<th class="Quantity">Quantity</th>
+																	<th class="Total">Totals</th>
+																	<th class="Date">Date</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td data-label="Product Name">Admin</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																</tr>
+																<tr>
+																	<td data-label="Product Name">Admin</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																</tr>
+																<tr>
+																	<td data-label="Product Name">Admin</td>
+																	<td data-label="Quantity">1</td>
+																	<td data-label="Total">5000</td>
+																	<td data-label="date">25/10/2024</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>

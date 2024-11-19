@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IMS-InView</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header class="site__header">
+			<div class="site__logo">
+				<a href="login.html"><span class="logo_bold">IMS</span></a>
+			</div>
+			<div class="site__header-frame">
+				<div class="site__header-action">
+					<ul>
+						<li>
+							<button class="badge" type="button"><span class="icon-notification"></span><sup class="counter">99</sup></button>
+							<div class="site__header-action--drop notification__drop">
+								<ul>
+									<li><span class="txt">Stock Out Maggi</span></li>
+									<li><span class="txt"></span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button class="badge" type="button"><span class="icon-user"></span><sup class="counter">5</sup></button>
+							<div class="site__header-action--drop profile__drop">
+								<ul>
+									<li><a href="profile.html">My Profile</a></li>
+									<li><a href="login.html">Logout</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" class="jsxNav"><span class="bar"></span></button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="site__main" class="site__main inview__main">
+			<aside class="worksidebar">
+				<form class="general--form pnlsearch__form">
+					<div class="form__set">
+						<input type="text">
+					</div>
+					<button type="submit"><span class="icon-search"></span></button>
+				</form>
+				<nav class="site__nav">
+					<ul>
+						<li>
+							<div class="knav">
+								<a href="adm_dashboard.html">
+									<span class="icon-dashboard"></span>
+									<span class="txt">Dashboard</span>
+								</a>
+							</div>
+						</li>
+						<li >
+							<div class="knav">
+								<a href="inventory.html">
+									<span class="icon-inventory"></span>
+									<span class="txt">Inventory</span>
+								</a>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="report.html">
+									<span class="icon-evaluation"></span>
+									<span class="txt">Sale Report</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="product.html">
+									<span class="icon-product"></span>
+									<span class="txt">Product</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+							<div class="kdrop">
+								<ul>
+									<li><a href="category.html">Category</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="orders.html">
+									<span class="icon-order"></span>
+									<span class="txt">Orders</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="manageuser.html">
+									<span class="icon-setting"></span>
+									<span class="txt">Manage User</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+							<div class="kdrop">
+								<ul>
+									<li><a href="addgroup.html">Add group</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="login.html">
+									<span class="icon-logout"></span>
+									<span class="txt">Log Out</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="workboard inventorypg">
+				<div class="workboard__heading">
+					<h1 class="workboard__title">Product Info</h1>
+				</div>
+				<div class="workpanel">
+					<div class="overall-info">
+						<div class="row">
+							<div class="col xs-12">
+								<div class="info">
+									<div class="row">
+										<div class="col xs-12 sx-6">
+											<span>Maggi</span>
+										</div>
+										<div class="col xs-12 sx-6">
+											<div class="site-panel">
+												<div class="action">
+													<a href=""><span class="icon-edit"></span>Edit</a>
+												</div>
+												<div class="action">
+													<a href=""><span class="icon-download"></span>Download</a>
+												</div>
+												<div class="action">
+													<span class="icon-close-outline"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col xs-12">
+										<div class="horizonal--nav">
+											<ul>
+												<li><a href="view.html">Overview</a></li>
+												<li><a href="inhistory.html">History</a></li>
+												<li><a href="purchase.html"></span>Purchases</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="info--counter">
+									<div class="row">
+										<div class="col xs-12 sx-8">
+											<div class="left__panel">
+												<div class="primary__details product__details">
+													<div class="meta--header">
+														<span >Primary Details</span>
+													</div>
+													<div class="listing_table product_infotable">
+														<table>
+															<tr>
+																<th scope="row">Product name</th>
+																<td>Maggi</td>
+															</tr>
+															<tr>
+																<th scope="row">Product ID</th>
+																<td>3423</td>
+															</tr>
+															<tr>
+																<th scope="row">Product Category</th>
+																<td>Instant Food</td>
+															</tr>
+															<tr>
+																<th scope="row">Expiry Date</th>
+																<td>2024/10/20</td>
+															</tr>
+															<tr>
+																<th scope="row">Thershold Value</th>
+																<td>12</td>
+															</tr>
+														</table>
+													</div>
+												</div>
+												<div class="supplier__details product__details">
+													<div class="meta--header">
+														<span>Suppliers Details</span>
+													</div>
+													<div class="listing_table product_infotable">
+														<table>
+															<tr>
+																<th scope="row">Supplier name</th>
+																<td>Rabin Chettri</td>
+															</tr>
+															<tr>
+																<th scope="row">Contact Number</th>
+																<td>9822789400</td>
+															</tr>
+														</table>
+													</div>
+												</div>
+												<div class="stock__location product__details">
+													<div class="meta--header">
+														<span>Stock Location</span>
+													</div>
+													<div class="tbl-wrap">
+														<table id="tracking__table">
+															<tr>
+																<th scope="col">Store Name</th>
+																<th scope="col">Stock in hand</th>
+															</tr>
+															<tr>
+																<th scope="row">kathmandu Branch</th>
+																<td>15</td>
+															</tr>
+															<tr>
+																<th scope="row">Bhaktapur Branch</th>
+																<td>10</td>
+															</tr>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col xs-12 sx-6 sm-4">
+											<div class="right__panel">
+												<div class="profile__img">
+													<div class="profile--img">
+														<img src="images/img2.png" alt="profileimg" width="150px"  height="150px">
+													</div>
+												</div>
+												<div class="tbl-wrap">
+													<table id="listing__table">
+														<tr>
+															<th scope="row">Opening Stock</th>
+															<td>40</td>
+														</tr>
+														<tr>
+															<th scope="row">Remaning Stock</th>
+															<td>34</td>
+														</tr>
+														<tr>
+															<th scope="row">On the Way</th>
+															<td>15</td>
+														</tr>
+														<tr>
+															<th scope="row">Threshold Value</th>
+															<td>12</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>

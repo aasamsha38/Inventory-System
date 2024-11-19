@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IMS-Dashboard</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header class="site__header">
+			<div class="site__logo">
+				<a href="login.html"><span class="logo_bold">IMS</span></a>
+			</div>
+			<div class="site__header-frame">
+				<div class="site__header-action">
+					<ul>
+						<li>
+							<button class="badge" type="button"><span class="icon-notification"></span><sup class="counter">99</sup></button>
+							<div class="site__header-action--drop notification__drop">
+								<ul>
+									<li><span class="txt">Stock Out Maggi</span></li>
+									<li><span class="txt"></span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button class="badge" type="button"><span class="icon-user"></span><sup class="counter">5</sup></button>
+							<div class="site__header-action--drop profile__drop">
+								<ul>
+									<li><a href="profile.html">My Profile</a></li>
+									<li><a href="login.html">Logout</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" class="jsxNav"><span class="bar"></span></button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="site__main" class="site__main adm-dashboard__main">
+			<aside class="worksidebar">
+				<form class="general--form pnlsearch__form">
+					<div class="form__set">
+						<input type="text">
+					</div>
+					<button type="submit"><span class="icon-search"></span></button>
+				</form>
+				<nav class="site__nav">
+					<ul>
+						<li>
+							<div class="knav">
+								<a href="adm_dashboard.html">
+									<span class="icon-dashboard"></span>
+									<span class="txt">Dashboard</span>
+								</a>
+							</div>
+						</li>
+						<li >
+							<div class="knav">
+								<a href="inventory.html">
+									<span class="icon-inventory"></span>
+									<span class="txt">Inventory</span>
+								</a>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="report.html">
+									<span class="icon-evaluation"></span>
+									<span class="txt">Sale Report</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="product.html">
+									<span class="icon-product"></span>
+									<span class="txt">Product</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+							<div class="kdrop">
+								<ul>
+									<li><a href="category.html">Category</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="orders.html">
+									<span class="icon-order"></span>
+									<span class="txt">Orders</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="manageuser.html">
+									<span class="icon-setting"></span>
+									<span class="txt">Manage User</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+							<div class="kdrop">
+								<ul>
+									<li><a href="addgroup.html">Add group</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="has-drop">
+							<div class="knav">
+								<a href="login.html">
+									<span class="icon-logout"></span>
+									<span class="txt">Log Out</span>
+								</a>
+								<button type="button"><span class="icon-arrow-right"></span></button>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="workboard">
+				<div class="workboard__heading">
+					<h1 class="workboard__title">Dashboard</h1>
+				</div>
+				<div class="workpanel">
+					<div class="row">
+						<div class="col xs-12 sx-8">
+							<div class="row">
+								<div class="col xs-12">
+									<div class="date">
+										<input type="date" />
+									</div>
+								</div>
+							</div>
+							<div class="insights">
+								<div class="row">
+									<div class="col xs-12 sm-3">
+										<div class="panel">
+											<div class="sales">
+												<div class="middle">
+													<div class="left">
+														<h3>Users</h3>
+														<h1>5</h1>
+													</div>
+													<div class="progress">
+														<svg>
+															<circle cx="26" cy="26" r="26"></circle>
+														</svg>
+														<div class="number">
+															<p>81%</p>
+														</div>
+													</div>
+												</div>
+												<small class="text-muted">Last 24 hours</small>
+											</div>
+										</div>
+									</div>
+									<div class="col xs-12 sm-3">
+										<div class="panel">
+											<div class="sales">
+												<div class="middle">
+													<div class="left">
+														<h3>Categories</h3>
+														<h1>7</h1>
+													</div>
+													<div class="progress">
+														<svg>
+															<circle cx="26" cy="26" r="26"></circle>
+														</svg>
+														<div class="number">
+															<p>81%</p>
+														</div>
+													</div>
+												</div>
+												<small class="text-muted">Last 24 hours</small>
+											</div>
+										</div>
+									</div>
+									<div class="col xs-12 sm-3">
+										<div class="panel">
+											<div class="expenses">
+												<div class="middle">
+													<div class="left">
+														<h3>Products</h3>
+														<h1>8</h1>
+													</div>
+													<div class="progress">
+														<svg>
+															<circle cx="26" cy="26" r="26"></circle>
+														</svg>
+														<div class="number">
+															<p>62%</p>
+														</div>
+													</div>
+												</div>
+												<small class="text-muted">Last 24 hours</small>
+											</div>
+										</div>
+									</div>
+									<div class="col xs-12 sm-3">
+										<div class="panel">
+											<div class="income">
+												<div class="middle">
+													<div class="left">
+														<h3>Sales</h3>
+														<h1>1000</h1>
+													</div>
+													<div class="progress">
+														<svg>
+															<circle cx="26" cy="26" r="26"></circle>
+														</svg>
+														<div class="number">
+															<p>44%</p>
+														</div>
+													</div>
+												</div>
+												<small class="text-muted">Last 24 hours</small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="recent-orders">
+								<div class="row">
+									<div class="col xs-12">
+										<h2 class="subheading">Selling Products</h2>
+										<table>
+											<thead>
+												<tr>
+													<th>Title</th>
+													<th>Total Sold</th>
+													<th>Total Quantity</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Foldable Mini Drone</td>
+													<td>1</td>
+													<td>21</td>
+												</tr>
+												<tr>
+													<td>Foldable Mini Drone</td>
+													<td>1</td>
+													<td>21</td>
+												</tr>
+												<tr>
+													<td>Foldable Mini Drone</td>
+													<td>1</td>
+													<td>21</td>
+												</tr>
+												<tr>
+													<td>Foldable Mini Drone</td>
+													<td>1</td>
+													<td>21</td>
+												</tr>
+											</tbody>
+										</table>
+										<a href="#">Show All</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col xs-12 sx-6 sm-4">
+							<div class="recent-updates">
+								<h2 class="subheading" >Recent Updates</h2>
+								<div class="updates">
+									<div class="update">
+										<div class="message">
+											<div class="profile-photo">
+												<img src="images/img1.svg" alt="" />
+											</div>
+											<div class="msg--info">
+												<p>
+													<span class="product"><b>Small Bubble Cushioning Wrap</b></span>
+												</p>
+												<small class="details">Packing Material</small>
+											</div>
+										</div>
+										<div class="sales">
+											<div class="amunt">
+												<span class="amount">Rs.5000</span>
+											</div>
+										</div>
+									</div>
+									<div class="update">
+										<div class="message">
+											<div class="profile-photo">
+												<img src="images/img1.svg" alt="" />
+											</div>
+											<div class="msg--info">
+												<p>
+													<span class="product"><b>Small Bubble Cushioning Wrap</b></span>
+												</p>
+												<small class="details">Packing Material</small>
+											</div>
+										</div>
+										<div class="sales">
+											<div class="amunt">
+												<span class="amount">Rs.5000</span>
+											</div>
+										</div>
+									</div>
+									<div class="update">
+										<div class="message">
+											<div class="profile-photo">
+												<img src="images/img1.svg" alt="" />
+											</div>
+											<div class="msg--info">
+												<p>
+													<span class="product"><b>Small Bubble Cushioning Wrap</b></span>
+												</p>
+												<small class="details">Packing Material</small>
+											</div>
+										</div>
+										<div class="sales">
+											<div class="amunt">
+												<span class="amount">Rs.5000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sales-analytics">
+								<h2 class="subheading">Sales Analytics</h2>
+								<div class="item online">
+									<div class="right">
+										<div class="info">
+											<h3 class="productname">Wheat</h3>
+											<small class="text-muted">Last 24 Hours</small>
+										</div>
+										<h5 class="success" style="color: #2baa3d;">+39%</h5>
+										<span class="total sales"><b>8966</b></span>
+									</div>
+								</div>
+								<div class="item online">
+									<div class="right">
+										<div class="info">
+											<h3 class="productname">Wheat</h3>
+											<small class="text-muted">Last 24 Hours</small>
+										</div>
+										<h5 class="success" style="color: #2baa3d;">+39%</h5>
+										<span class="total sales"><b>8966</b></span>
+									</div>
+								</div>
+								<div class="item online">
+									<div class="right">
+										<div class="info">
+											<h3 class="productname">Wheat</h3>
+											<small class="text-muted">Last 24 Hours</small>
+										</div>
+										<h5 class="success" style="color: #2baa3d;">+39%</h5>
+										<span class="total sales"><b>8966</b></span>
+									</div>
+								</div>
+								<div class="item online">
+									<div class="right">
+										<div class="info">
+											<h3 class="productname">Wheat</h3>
+											<small class="text-muted">Last 24 Hours</small>
+										</div>
+										<h5 class="success" style="color: #2baa3d;">+39%</h5>
+										<span class="total sales"><b>8966</b></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>
