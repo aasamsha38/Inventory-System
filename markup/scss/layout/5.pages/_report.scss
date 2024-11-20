@@ -17,25 +17,23 @@
 		.subheading {
 			margin: 0 0 10px 0;
 		}
-		}
-		.info {
-			.access__form {
-				.form__set {
-					display: flex;
-					#enddate {
-						margin: 0 0 0 10px;
-					}
-				}
-			}
-		}
-		.tbl-wrap {
-			table {
-				box-shadow: 0 1rem 3rem rgba(132, 139, 200, 0.1);
-				th {
-				}
-				td {
-					text-align: center;
-				}
+	}
+	.info {
+		.form__set {
+			display: flex;
+			#enddate {
+				margin: 0 0 0 10px;
 			}
 		}
 	}
+	.tbl-wrap {
+		table {
+			box-shadow: 0 1rem 3rem rgba(132, 139, 200, 0.1);
+			th {
+			}
+			td {
+				text-align: center;
+			}
+		}
+	}
+}

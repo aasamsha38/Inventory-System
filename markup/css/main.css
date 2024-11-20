@@ -3874,7 +3874,8 @@ button.mfp-arrow {
       height: 30px;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+      padding: 0 0 0 10px; }
       .site__main .overall-info .info .form__action .primary-tint {
         height: 30px;
         font-size: 13px;
@@ -4125,11 +4126,11 @@ button.mfp-arrow {
 .report__main .workboard .subheading {
   margin: 0 0 10px 0; }
 
-.report__main .info .access__form .form__set {
+.report__main .info .form__set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .report__main .info .access__form .form__set #enddate {
+  .report__main .info .form__set #enddate {
     margin: 0 0 0 10px; }
 
 .report__main .tbl-wrap table {
@@ -4188,9 +4189,9 @@ button.mfp-arrow {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 .media__main .profile--img img {
   width: 50px;
