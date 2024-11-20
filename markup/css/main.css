@@ -2735,7 +2735,7 @@ a {
 
 .tbl-wrap th {
   background: #363636;
-  color: #00435B; }
+  color: #363636; }
   @media (min-width: 768px) {
     .tbl-wrap th {
       background: #ededed; } }
@@ -3591,7 +3591,7 @@ button.mfp-arrow {
     .adm-dashboard__main .recent-orders table:hover {
       box-shadow: none; }
     .adm-dashboard__main .recent-orders table th {
-      color: #00435B; }
+      color: #363636; }
     .adm-dashboard__main .recent-orders table tbody td {
       height: 1.8rem;
       border-bottom: 1px solid rgba(132, 139, 200, 0.1);
@@ -3654,55 +3654,9 @@ button.mfp-arrow {
 
 .adm-dashboard__main .insights .progress {
   position: absolute;
-  width: 70px;
-  height: 80px;
   border-radius: 50%;
-  left: 60%;
+  left: 85%;
   top: 20%; }
-
-.adm-dashboard__main .insights svg {
-  width: 7rem;
-  height: 7rem; }
-
-.adm-dashboard__main .insights svg circle {
-  fill: none;
-  stroke: #7380ec;
-  stroke-width: 8;
-  stroke-linecap: round;
-  -webkit-transform: translate(5px, 5px);
-      -ms-transform: translate(5px, 5px);
-          transform: translate(5px, 5px);
-  stroke-dasharray: 110;
-  stroke-dashoffset: 92; }
-
-.adm-dashboard__main .insights .sales svg circle {
-  stroke-dashoffset: -30;
-  stroke-dasharray: 200; }
-
-.adm-dashboard__main .insights .expenses svg circle {
-  stroke-dashoffset: 20;
-  stroke-dasharray: 80; }
-
-.adm-dashboard__main .insights .income svg circle {
-  stroke-dashoffset: 35;
-  stroke-dasharray: 110; }
-
-.adm-dashboard__main .insights .progress .number {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 13px;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
 
 .adm-dashboard__main .insights small {
   margin-top: 1.3rem;
@@ -3964,10 +3918,7 @@ button.mfp-arrow {
       font-size: 13px; }
     .site__main .tbl-wrap #tracking__table th {
       line-height: 1.5;
-      background: #00435B;
-      color: #fff;
       border-color: #efefef;
-      font-weight: 400;
       font-size: 14px; }
   .site__main .tbl-wrap table tr:first-child th:first-child {
     border-top-left-radius: 5px; }
@@ -4183,8 +4134,6 @@ button.mfp-arrow {
 
 .report__main .tbl-wrap table {
   box-shadow: 0 1rem 3rem rgba(132, 139, 200, 0.1); }
-  .report__main .tbl-wrap table th {
-    background: #fff; }
   .report__main .tbl-wrap table td {
     text-align: center; }
 
@@ -4215,12 +4164,47 @@ button.mfp-arrow {
 
 .profile__main .upload .custom-photo-upload {
   display: inline-block;
-  padding: 14px 48px;
+  padding: 8px 48px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px; }
 
 .profile__main .upload input[type=file] {
+  display: none; }
+
+.media__main .site-panel {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.media__main .form__action {
+  padding: 0 20px 0 0; }
+
+.media__main .profile__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.media__main .profile--img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; }
+
+.media__main .upload .custom-photo-upload {
+  display: inline-block;
+  padding: 8px 40px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; }
+
+.media__main .upload input[type=file] {
   display: none; }
 
 .site__footer {

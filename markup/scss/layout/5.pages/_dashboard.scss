@@ -20,7 +20,7 @@
 				box-shadow: none;
 			}
 			th {
-				color: $primary;
+				color: $default;
 			}
 			tbody td {
 				height: 1.8rem;
@@ -99,53 +99,10 @@
 
 		.progress {
 			position: absolute;
-			width: 70px;
-			height: 80px;
 			border-radius: 50%;
-			left: 60%;
+			left: 85%;
 			top: 20%;
-		}
 
-		svg {
-			width: 7rem;
-			height: 7rem;
-		}
-
-		svg circle {
-			fill: none;
-			stroke: #7380ec;
-			stroke-width: 8;
-			stroke-linecap: round;
-			transform: translate(5px, 5px);
-			stroke-dasharray: 110;
-			stroke-dashoffset: 92;
-		}
-
-		.sales svg circle {
-			stroke-dashoffset: -30;
-			stroke-dasharray: 200;
-		}
-
-		.expenses svg circle {
-			stroke-dashoffset: 20;
-			stroke-dasharray: 80;
-		}
-
-		.income svg circle {
-			stroke-dashoffset: 35;
-			stroke-dasharray: 110;
-		}
-
-		.progress .number {
-			position: absolute;
-			top: 0;
-			left: 0;
-			font-size: 13px;
-			height: 100%;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
 		}
 
 		small {

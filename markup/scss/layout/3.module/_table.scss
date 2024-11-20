@@ -67,7 +67,7 @@
 
 	th {
 		background: $default;
-		color: $primary;
+		color: $default;
 		@include media('>=tablet') {
 			background: #ededed;
 			// padding-right: 220px;
