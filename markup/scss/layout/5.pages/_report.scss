@@ -30,9 +30,13 @@
 		table {
 			box-shadow: 0 1rem 3rem rgba(132, 139, 200, 0.1);
 			th {
+				background: $primary;
+				color: $white;
+				line-height: 1.5;
 			}
 			td {
 				text-align: center;
+				line-height: 1.5;
 			}
 		}
 	}

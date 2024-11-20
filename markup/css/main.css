@@ -2711,8 +2711,7 @@ a {
   padding: 10px 12px; }
   @media (min-width: 768px) {
     .tbl-wrap th, .tbl-wrap td {
-      border-width: 1px;
-      padding: 8px 25px; } }
+      border-width: 1px; } }
 
 @media (max-width: 767px) {
   .tbl-wrap thead {
@@ -3644,7 +3643,7 @@ button.mfp-arrow {
 .adm-dashboard__main .insights .panel {
   box-shadow: 0 1rem 3rem rgba(132, 139, 200, 0.1);
   background: #fff;
-  padding: 20px 10px;
+  padding: 15px 10px;
   border-radius: 5px; }
 
 .adm-dashboard__main .insights h3 {
@@ -3659,8 +3658,10 @@ button.mfp-arrow {
   top: 20%; }
 
 .adm-dashboard__main .insights small {
-  margin-top: 1.3rem;
-  display: block; }
+  background: #F0F8FF;
+  margin-top: 15px;
+  display: block;
+  padding: 10px; }
 
 .adm-dashboard__main .recent-updates {
   margin-top: 1rem; }
@@ -3915,9 +3916,11 @@ button.mfp-arrow {
       .site__main .tbl-wrap #tracking__table tr a, .site__main .tbl-wrap #tracking__table td a, .site__main .tbl-wrap #tracking__table th a {
         text-decoration: underline; }
     .site__main .tbl-wrap #tracking__table td {
-      line-height: 0.8;
-      font-size: 13px; }
+      line-height: 1.5;
+      font-size: 14px; }
     .site__main .tbl-wrap #tracking__table th {
+      background: #00435B;
+      color: #fff;
       line-height: 1.5;
       border-color: #efefef;
       font-size: 14px; }
@@ -4135,8 +4138,13 @@ button.mfp-arrow {
 
 .report__main .tbl-wrap table {
   box-shadow: 0 1rem 3rem rgba(132, 139, 200, 0.1); }
+  .report__main .tbl-wrap table th {
+    background: #00435B;
+    color: #fff;
+    line-height: 1.5; }
   .report__main .tbl-wrap table td {
-    text-align: center; }
+    text-align: center;
+    line-height: 1.5; }
 
 .profile__main .site-panel {
   -webkit-box-pack: start;
