@@ -3614,7 +3614,7 @@ button.mfp-arrow {
 
 .adm-dashboard__main .date input[type="date"] {
   background: transparent;
-  color: #00435B;
+  color: #363636;
   border: none; }
 
 .adm-dashboard__main .insights .middle {
@@ -3704,48 +3704,44 @@ button.mfp-arrow {
 
 .adm-dashboard__main .sales-analytics {
   margin-top: 2rem; }
-
-.adm-dashboard__main .sales-analytics h2 {
-  margin-bottom: 0.8rem; }
-
-.adm-dashboard__main .sales-analytics .item {
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.7rem;
-  padding: 1.4rem  1.8rem;
-  border-radius: 10px;
-  box-shadow: 0 1rem 3rem rgba(132, 139, 200, 0.1);
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease; }
-
-.adm-dashboard__main .sales-analytics .item:hover {
-  box-shadow: none; }
-
-.adm-dashboard__main .sales-analytics .item .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  width: 100%;
-  color: #00435B; }
-  .adm-dashboard__main .sales-analytics .item .right h3 {
-    font-size: 0.87rem; }
-  .adm-dashboard__main .sales-analytics .item .right .info h3 {
-    color: #00435B;
-    font-size: 0.87rem; }
+  .adm-dashboard__main .sales-analytics h2 {
+    margin-bottom: 0.8rem; }
+  .adm-dashboard__main .sales-analytics .item {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem  1.8rem;
+    border-radius: 10px;
+    box-shadow: 0 1rem 3rem rgba(132, 139, 200, 0.1);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease; }
+  .adm-dashboard__main .sales-analytics .item:hover {
+    box-shadow: none; }
+  .adm-dashboard__main .sales-analytics .item .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    color: #00435B; }
+    .adm-dashboard__main .sales-analytics .item .right h3 {
+      font-size: 0.87rem; }
+    .adm-dashboard__main .sales-analytics .item .right .info h3 {
+      color: #00435B;
+      font-size: 0.87rem; }
 
 .adm-dashboard__main .sales-analytics .item .icon, .adm-dashboard__main .sales-analytics .item [class^="icon-"], .adm-dashboard__main .sales-analytics .item [class*="icon-"], .adm-dashboard__main .sales-analytics .item [class*="dd-icon-"], .adm-dashboard__main .sales-analytics .item .arrow-rt:after {
   padding: 1rem;
