@@ -45,10 +45,15 @@
 
 	tbody {
 		tr {
+			// border: {
+			// 	width: 1px;
+			// 	style: solid; 
+			// 	color: lighten($default, 64.31);
+			// };
 			&:nth-child(even) {
-				background: #f6f6f6;
+				// background: #f6f6f6;
 				@include media('>=tablet') {
-					background: #f8f8f8;
+					// background: #f8f8f8;
 				}
 			}
 

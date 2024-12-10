@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IMS-Dashboard</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="wrapper">
+		<main id="site__main" class="site__main">
+			<section class="workboard">
+				<div class="workboard__heading">
+					<h1 class="workboard__title">Inventory Management System-Sales Report</h1>
+				</div>
+				<div class="workpanel salesreport__main ">
+					<div class="row">
+						<div class="col xs-12">
+							<div class="date">
+								<span>2022/2/2</span>
+							</div>
+						</div>
+						<div class="col xs-12">
+							<div class="questionaries__showcase" id="question_popup" style="display: flex;">
+								<div class="tbl-wrap">
+									<table id="tracking__table">
+										<thead>
+											<tr>
+												<th class="Date">Date</th>
+												<th class="prodtitle">Product Title</th>
+												<th class="buypric">Buying Price</th>
+												<th class="selpric">Selling Price</th>
+												<th class="Quantity">Quantity</th>
+												<th class="Total" colspan="3">Total</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="Date" rowspan="2">Date</td>
+												<td data-label="Product Title" rowspan="2">Product Title</td>
+												<td data-label="Buying Price" rowspan="2">Buying Price</td>
+												<td data-label="Selling Price" rowspan="2">Selling Price</td>
+												<td data-label="Quantity">Grand Total</td>
+												<td data-label="Total" colspan="3">Warning undefined variable</td>
+											</tr>
+											<tr>
+												<td data-label="Quantity">Profit</td>
+												<td data-label="Total" colspan="3">Warning undefined variable</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>

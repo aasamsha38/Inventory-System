@@ -2717,12 +2717,6 @@ a {
   .tbl-wrap thead {
     display: none; } }
 
-.tbl-wrap tbody tr:nth-child(even) {
-  background: #f6f6f6; }
-  @media (min-width: 768px) {
-    .tbl-wrap tbody tr:nth-child(even) {
-      background: #f8f8f8; } }
-
 .tbl-wrap tbody tr:hover {
   background: rgba(0, 67, 91, 0.1); }
 
@@ -3519,7 +3513,7 @@ button.mfp-arrow {
 
 .workboard {
   padding: 20px;
-  min-height: 85vh; }
+  min-height: 100vh; }
   .workboard__title {
     font: 700 22px/1 "Karla", sans-serif; }
 
@@ -4212,6 +4206,9 @@ button.mfp-arrow {
 
 .media__main .upload input[type=file] {
   display: none; }
+
+.salesreport__main .date {
+  margin: 10px 0; }
 
 .site__footer {
   display: -webkit-box;
