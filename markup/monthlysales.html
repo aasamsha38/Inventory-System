@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>IMS-Product</title>
+	<title>IMS-Sales Report</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</header>
-		<main id="site__main" class="site__main product__main">
+		<main id="site__main" class="site__main report__main">
 			<aside class="worksidebar">
 				<nav class="site__nav">
 					<ul>
@@ -115,99 +115,57 @@
 					</ul>
 				</nav>
 			</aside>
-			<section class="workboard inventorypg">
+			<section class="workboard">
 				<div class="workboard__heading">
-					<h1 class="workboard__title">Products</h1>
+					<h1 class="workboard__title">Sales</h1>
 				</div>
 				<div class="workpanel">
-					<div class="overall-info" >
-						<div class="row">
-							<div class="col xs-12">
-								<form class="general--form access__form info">
-									<div class="info">
-										<div class="row">
-											<div class="col xs-12 sx-6">
-												<span>New Product</span>
-											</div>
-											<div class="col xs-12 sx-6">
-												<div class="site-panel">
-													<div class="form__action">
-														<input type="submit" class="button tertiary-line" value="Discard">
-													</div>
-													<div class="form__action">
-														<input type="submit" class="button primary-tint" value="Save">
-													</div>
-												</div>
+					<div class="row">
+						<div class="col xs-12">
+							<div class="meta-info">
+								<div class="row">
+									<div class="col xs-12 sm-6">
+										<h2 class="subheading">Monthly Sales</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col xs-12 ">
+										<div class="questionaries__showcase" id="question_popup" style="display: flex;">
+											<div class="tbl-wrap">
+												<table id="sales__table">
+													<thead>
+														<tr>
+															<th class="name">Product Name</th>
+															<th class="Quantity">Quantity</th>
+															<th class="Total">Totals</th>
+															<th class="Date">Date</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td data-label="Product Name">Admin</td>
+															<td data-label="Quantity">1</td>
+															<td data-label="Total">5000</td>
+															<td data-label="date">25/10/2024</td>
+														</tr>
+														<tr>
+															<td data-label="Product Name">Admin</td>
+															<td data-label="Quantity">1</td>
+															<td data-label="Total">5000</td>
+															<td data-label="date">25/10/2024</td>
+														</tr>
+														<tr>
+															<td data-label="Product Name">Admin</td>
+															<td data-label="Quantity">1</td>
+															<td data-label="Total">5000</td>
+															<td data-label="date">25/10/2024</td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col xs-12 sm-3">
-											<div class="form__module">
-												<label for="prodname" class="form__label">Product Name</label>
-												<div class="form__set">
-													<input type="text" id="prodname" placeholder="Product Name">
-												</div>
-											</div>
-										</div>
-										<div class="col xs-12 sm-3">
-											<div class="form__module">
-												<label for="prodID" class="form__label">Product ID</label>
-												<div class="form__set">
-													<input type="tel" id="prodID" placeholder="Product ID">
-												</div>
-											</div>
-										</div>
-										<div class="col xs-12 sm-3">
-											<div class="form__module">
-												<label for="prodcat" class="form__label">Category</label>
-												<div class="form__set">
-													<input type="text" id="prodcat" placeholder="Category">
-												</div>
-											</div>
-										</div>
-										<div class="col xs-12 sm-3">
-											<div class="form__module">
-												<label for="prodbuying" class="form__label">Buying Price</label>
-												<div class="form__set">
-													<input type="tel" id="prodbuying" placeholder="Buying Price">
-												</div>
-											</div>
-										</div>
-										<div class="col xs-12 sm-3">
-											<div class="form__module">
-												<label for="prodbuying" class="form__label">Buying Price</label>
-												<div class="form__set">
-													<input type="tel" id="prodbuying" placeholder="Buying Price">
-												</div>
-											</div>
-										</div>
-										<div class="col xs-12 sm-3">
-											<div class="form__module">
-												<label for="prodqty" class="form__label">Quantity</label>
-												<div class="form__set">
-													<input type="tel" id="prodqty" placeholder="Quantity">
-												</div>
-											</div>
-										</div>
-										<div class="col xs-12 sm-3">
-											<div class="form__module">
-												<label for="prodexpiry" class="form__label">Expiry Date</label>
-												<div class="form__set">
-													<input type="date" id="prodexpiry" placeholder="Expiry">
-												</div>
-											</div>
-										</div>
-										<div class="col xs-12 sm-3">
-											<div class="form__module">
-												<label for="prodthrhold" class="form__label">Threshold Value</label>
-												<div class="form__set">
-													<input type="tel" id="prodthrhold" placeholder="Threshold Value">
-												</div>
-											</div>
-										</div>
-									</div>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>

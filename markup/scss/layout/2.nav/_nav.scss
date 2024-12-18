@@ -380,15 +380,15 @@
 					}
 				}
 
-				// .dropnav {
-				// 	@include media('<tablet') {
-				// 		display: block;
-				// 	}
-				// 	@include media('>=tablet') {
-				// 		opacity: 1;
-				// 		visibility: visible;
-				// 	}
-				// }
+				.dropnav {
+					@include media('<tablet') {
+						display: block;
+					}
+					@include media('>=tablet') {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
 			}
 
 			&.has-child {

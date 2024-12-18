@@ -1,10 +1,13 @@
+.profile__drop {
+	
+}
 .site {
 	&__header {
 		background: $white;
 		display: flex;
 		align-items: center;
 		// padding: 5px 30px;
-		    box-shadow: 0 0.2rem 2rem rgba(132, 139, 200, 0.1);
+		box-shadow: 0 0.2rem 2rem rgba(132, 139, 200, 0.1);
 
 
 		&-frame {
@@ -166,15 +169,12 @@
 .site__nav {
 	padding: 30px 0;
 	position: fixed;
+	.rotate{
+		transform: rotate(90deg);
+	}
 	> ul {
-		@extend %listreset;
-
-		li:last-child {
-			position: absolute;
-			top: 33rem;
-			width: 100%;
-		}
-
+		@extend 
+		%listreset;
 		// .knav.active {
 		// 	background: rgba(5, 68, 112, 0.5);
 		// 	color: $primary;
@@ -195,6 +195,7 @@
 
 		> li {
 			> .knav {
+				position: relative;
 				width: 200px;
 				a {
 					color: $white;
@@ -202,8 +203,10 @@
 					padding: 18px 50px 18px 30px;
 					// @include animate(background);
 
-					span {
+					.icon {
 						font-size: 0.9rem;
+					}
+					span {
 						transition: all 500ms ease;
 					}
 
@@ -213,14 +216,20 @@
 						border-right: 3px solid $white;
 
 						span {
-							margin-left: 0.01rem;
-							font-size: 0.92rem;
+							// margin-left: 0.01rem;
+							// font-size: 0.92rem;
 						}
 					}
 				}
 
 				button {
-					display: none;
+					bottom: 1rem;
+					left: 10rem;
+					position: absolute;
+					// display: none;
+					background: transparent;
+					border: none;
+					color: $white;
 				}
 			}
 
@@ -233,48 +242,32 @@
 	.kdrop {
 		> ul {
 			@extend %listreset;
+			// position: relative;
+			padding:  0 0 8px 40px;
 
 			> li {
+				// position: absolute;
+				// bottom: 1rem;
+				// left: 3rem;
+				width: 100%;
+				border-left: 2px solid lighten($primary, 3%);
+				// padding: 1px 1px 1px 10px;
 				> a {
+					display: block;
+					padding: 15px 30px 15px 10px;
 					color: $white;
+					&:hover {
+						width: 100%;
+						background:lighten($primary, 8%);
+						border-right: 3px solid $white;
+
+						span {
+							// margin-left: 0.01rem;
+							// font-size: 0.92rem;
+						}
+					}
 				}
 			}
 		}
-	}
-}
-
-
-.pnlsearch__form {
-	border: 1px solid $gray-variant;
-	border-radius: 5px;
-	padding: 3px;
-	display: flex;
-	align-items: center;
-	position: absolute;
-	top: 12px;
-	right: 700px;
-	left: 220px;
-
-	.form__set {
-		flex-basis: 0;
-		flex-grow: 1;
-		max-width: 100%;
-
-		input {
-			background: transparent;
-			border: none;
-			height: 25px;
-			padding: 0.2em 0.5em;
-		}
-	}
-
-	button {
-		flex: 0 0 17px;
-		background: transparent;
-		border: none;
-		margin: 0;
-		padding: 0;
-		width: 17px;
-		height: 17px;
 	}
 }

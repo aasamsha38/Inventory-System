@@ -45,12 +45,6 @@
 			</header>
 			<main id="site__main" class="site__main media__main">
 				<aside class="worksidebar">
-					<form class="general--form pnlsearch__form">
-						<div class="form__set">
-							<input type="text">
-						</div>
-						<button type="submit"><span class="icon-search"></span></button>
-					</form>
 					<nav class="site__nav">
 					<ul>
 						<li>
@@ -61,8 +55,8 @@
 								</a>
 							</div>
 						</li>
-						<li >
-							<div class="knav">
+						<li>
+							<div class="knav sub-btn">
 								<a href="inventory.html">
 									<span class="icon-inventory"></span>
 									<span class="txt">Inventory</span>
@@ -70,25 +64,19 @@
 							</div>
 						</li>
 						<li class="has-drop">
-							<div class="knav">
-								<a href="report.html">
+							<div class="knav sub-btn">
+								<a href="#">
 									<span class="icon-evaluation"></span>
 									<span class="txt">Sale Report</span>
 								</a>
-								<button type="button"><span class="icon-arrow-right"></span></button>
+								<button type="button"><span class="icon-keyboard_arrow_right dropdown"></span></button>
 							</div>
-						</li>
-						<li class="has-drop">
-							<div class="knav">
-								<a href="product.html">
-									<span class="icon-product"></span>
-									<span class="txt">Product</span>
-								</a>
-								<button type="button"><span class="icon-arrow-right"></span></button>
-							</div>
-							<div class="kdrop">
+							<div class="kdrop sub-menu">
 								<ul>
-									<li><a href="category.html">Category</a></li>
+									<li><a href="DateRange.html">Date Range</a></li>
+									<li><a href="ovrselling.html">Selling Products</a></li>
+									<li><a href="dailysales.html">Daily</a></li>
+									<li><a href="monthlysales.html">Monthly</a></li>
 								</ul>
 							</div>
 						</li>
@@ -101,36 +89,27 @@
 								<button type="button"><span class="icon-arrow-right"></span></button>
 							</div>
 						</li>
-						<li class="has-drop">
+						<li>
 							<div class="knav">
 								<a href="media.html">
 									<span class="icon-filter_list"></span>
 									<span class="txt">Media</span>
 								</a>
-								<button type="button"><span class="icon-keyboard_arrow_right"></span></button>
 							</div>
 						</li>
 						<li class="has-drop">
-							<div class="knav">
-								<a href="manageuser.html">
+							<div class="knav sub-btn">
+								<a href="#">
 									<span class="icon-setting"></span>
-									<span class="txt">Manage User</span>
+									<span class="txt">Manage</span>
 								</a>
-								<button type="button"><span class="icon-arrow-right"></span></button>
+								<button type="button"><span class="icon-keyboard_arrow_right dropdown"></span></button>
 							</div>
-							<div class="kdrop">
+							<div class="kdrop sub-menu">
 								<ul>
-									<li><a href="listgroup.html">List group</a></li>
+									<li><a href="manageuser.html">Manage User</a></li>
+									<li><a href="category.html">Category</a></li>
 								</ul>
-							</div>
-						</li>
-						<li class="has-drop">
-							<div class="knav">
-								<a href="login.html">
-									<span class="icon-logout"></span>
-									<span class="txt">Log Out</span>
-								</a>
-								<button type="button"><span class="icon-arrow-right"></span></button>
 							</div>
 						</li>
 					</ul>
@@ -220,24 +199,13 @@
 										</table>
 									</div>
 								</div>
-								<!-- <div class="pagination">
-									<ul class="paging">
-										<li><a href="#"><span class="icon-keyboard_arrow_left"></span class=""></a></li>
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#"><span class="icon-keyboard_arrow_right"></span></a></li>
-									</ul>
-								</div> -->
 							</div>
 						</div>
 					</div>
 				</section>
 			</main>
-			<!-- <footer class="site__footer">
-				<span class="copy">&copy; Copyright</span>
-			</footer> -->
 		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="test.js"></script>
 	</body>
 	</html>
